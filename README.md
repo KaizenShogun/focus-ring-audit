@@ -274,6 +274,8 @@ draft number turns an AA failure into something a maintainer can reasonably read
 python3 controls.py                  # the sensor check above -> controls.json
 python3 run_corpus.py --tries 2      # the corpus            -> results.json
 python3 make_table.py results.json   # the markdown above
+python3 fix_candidates.py --tries 2  # the fix table         -> fixes.json
+python3 _pico_dark.py                # Pico's dark theme     -> pico_dark.json
 ```
 
 Every measurement is repeated and any row whose two runs disagree is reported as `UNSTABLE`
