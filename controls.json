@@ -1,0 +1,184 @@
+{
+ "C0 nothing": [
+  {
+   "selector": "#lnk",
+   "component_px": [
+    102.1875,
+    17.0
+   ],
+   "changed_px": 500,
+   "visible": true,
+   "max_contrast": 19.03,
+   "median_contrast": 19.03,
+   "px_at_3to1": 483,
+   "area_needed_approx": 493,
+   "aa_1411": "PASS",
+   "area_ratio": 0.98,
+   "verdict": "PASS 1.4.11 AA \u2014 483 px at >=3:1, up to 19.03:1"
+  },
+  {
+   "selector": "#inp",
+   "component_px": [
+    185.0,
+    21.0
+   ],
+   "changed_px": 816,
+   "visible": true,
+   "max_contrast": 19.03,
+   "median_contrast": 4.19,
+   "px_at_3to1": 796,
+   "area_needed_approx": 840,
+   "aa_1411": "PASS",
+   "area_ratio": 0.95,
+   "verdict": "PASS 1.4.11 AA \u2014 796 px at >=3:1, up to 19.03:1"
+  },
+  {
+   "selector": "#btn",
+   "component_px": [
+    69.359375,
+    21.0
+   ],
+   "changed_px": 348,
+   "visible": true,
+   "max_contrast": 16.55,
+   "median_contrast": 5.25,
+   "px_at_3to1": 332,
+   "area_needed_approx": 377,
+   "aa_1411": "PASS",
+   "area_ratio": 0.88,
+   "verdict": "PASS 1.4.11 AA \u2014 332 px at >=3:1, up to 16.55:1"
+  }
+ ],
+ "C1 :focus": [
+  {
+   "selector": "#lnk",
+   "component_px": [
+    102.1875,
+    17.0
+   ],
+   "changed_px": 1668,
+   "visible": true,
+   "max_contrast": 4.0,
+   "median_contrast": 4.0,
+   "px_at_3to1": 1668,
+   "area_needed_approx": 493,
+   "aa_1411": "PASS",
+   "area_ratio": 3.38,
+   "verdict": "PASS 1.4.11 AA \u2014 1668 px at >=3:1, up to 4.00:1"
+  },
+  {
+   "selector": "#inp",
+   "component_px": [
+    185.0,
+    21.0
+   ],
+   "changed_px": 2716,
+   "visible": true,
+   "max_contrast": 4.0,
+   "median_contrast": 4.0,
+   "px_at_3to1": 2712,
+   "area_needed_approx": 840,
+   "aa_1411": "PASS",
+   "area_ratio": 3.23,
+   "verdict": "PASS 1.4.11 AA \u2014 2712 px at >=3:1, up to 4.00:1"
+  },
+  {
+   "selector": "#btn",
+   "component_px": [
+    69.359375,
+    21.0
+   ],
+   "changed_px": 1320,
+   "visible": true,
+   "max_contrast": 4.0,
+   "median_contrast": 4.0,
+   "px_at_3to1": 1320,
+   "area_needed_approx": 377,
+   "aa_1411": "PASS",
+   "area_ratio": 3.5,
+   "verdict": "PASS 1.4.11 AA \u2014 1320 px at >=3:1, up to 4.00:1"
+  }
+ ],
+ "C2 :focus-visible": [
+  {
+   "selector": "#lnk",
+   "component_px": [
+    102.1875,
+    17.0
+   ],
+   "changed_px": 1668,
+   "visible": true,
+   "max_contrast": 4.0,
+   "median_contrast": 4.0,
+   "px_at_3to1": 1668,
+   "area_needed_approx": 493,
+   "aa_1411": "PASS",
+   "area_ratio": 3.38,
+   "verdict": "PASS 1.4.11 AA \u2014 1668 px at >=3:1, up to 4.00:1"
+  },
+  {
+   "selector": "#inp",
+   "component_px": [
+    185.0,
+    21.0
+   ],
+   "changed_px": 2716,
+   "visible": true,
+   "max_contrast": 4.0,
+   "median_contrast": 4.0,
+   "px_at_3to1": 2712,
+   "area_needed_approx": 840,
+   "aa_1411": "PASS",
+   "area_ratio": 3.23,
+   "verdict": "PASS 1.4.11 AA \u2014 2712 px at >=3:1, up to 4.00:1"
+  },
+  {
+   "selector": "#btn",
+   "component_px": [
+    69.359375,
+    21.0
+   ],
+   "changed_px": 1320,
+   "visible": true,
+   "max_contrast": 4.0,
+   "median_contrast": 4.0,
+   "px_at_3to1": 1320,
+   "area_needed_approx": 377,
+   "aa_1411": "PASS",
+   "area_ratio": 3.5,
+   "verdict": "PASS 1.4.11 AA \u2014 1320 px at >=3:1, up to 4.00:1"
+  }
+ ],
+ "C3 outline:0": [
+  {
+   "selector": "#lnk",
+   "component_px": [
+    102.1875,
+    17.0
+   ],
+   "changed_px": 0,
+   "visible": false,
+   "verdict": "FAIL 2.4.7 \u2014 no visible change on focus"
+  },
+  {
+   "selector": "#inp",
+   "component_px": [
+    181.0,
+    17.0
+   ],
+   "changed_px": 0,
+   "visible": false,
+   "verdict": "FAIL 2.4.7 \u2014 no visible change on focus"
+  },
+  {
+   "selector": "#btn",
+   "component_px": [
+    65.359375,
+    17.0
+   ],
+   "changed_px": 0,
+   "visible": false,
+   "verdict": "FAIL 2.4.7 \u2014 no visible change on focus"
+  }
+ ]
+}

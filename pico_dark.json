@@ -1,0 +1,39 @@
+{
+ "framework": "Pico CSS",
+ "theme": "dark",
+ "rows": [
+  {
+   "element": "link",
+   "selector": "#lnk",
+   "theme": "dark",
+   "css": "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css",
+   "max_contrast": 3.5,
+   "changed_px": 1982,
+   "px_at_3to1": 138,
+   "aa_1411": "PASS",
+   "stable": true
+  },
+  {
+   "element": "text input",
+   "selector": "#inp",
+   "theme": "dark",
+   "css": "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css",
+   "max_contrast": 3.43,
+   "changed_px": 46143,
+   "px_at_3to1": 1654,
+   "aa_1411": "PASS",
+   "stable": true
+  },
+  {
+   "element": "button",
+   "selector": "#btn",
+   "theme": "dark",
+   "css": "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css",
+   "max_contrast": 2.01,
+   "changed_px": 7592,
+   "px_at_3to1": 0,
+   "aa_1411": "FAIL",
+   "stable": true
+  }
+ ]
+}

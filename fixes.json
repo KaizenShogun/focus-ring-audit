@@ -1,0 +1,305 @@
+{
+ "candidates": {
+  "solid": "a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible,[role=button]:focus-visible{outline:3px solid #005fcc;outline-offset:2px}",
+  "dual": "a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,[tabindex]:focus-visible,[role=button]:focus-visible{outline:2px solid #000;outline-offset:2px;box-shadow:0 0 0 6px #fff,0 0 0 8px #000}"
+ },
+ "rows": [
+  {
+   "framework": "water.css",
+   "element": "text input",
+   "css": "https://cdn.jsdelivr.net/npm/water.css@2/out/light.css",
+   "before": {
+    "max_contrast": 2.27,
+    "px_at_3to1": 0,
+    "aa_1411": "FAIL",
+    "visible": true
+   },
+   "after": {
+    "solid": {
+     "max_contrast": 5.98,
+     "px_at_3to1": 1579,
+     "aa_1411": "PASS",
+     "stable": true,
+     "error": null
+    },
+    "dual": {
+     "max_contrast": 21.0,
+     "px_at_3to1": 2166,
+     "aa_1411": "PASS",
+     "stable": true,
+     "error": null
+    }
+   }
+  },
+  {
+   "framework": "water.css",
+   "element": "button",
+   "css": "https://cdn.jsdelivr.net/npm/water.css@2/out/light.css",
+   "before": {
+    "max_contrast": 2.27,
+    "px_at_3to1": 0,
+    "aa_1411": "FAIL",
+    "visible": true
+   },
+   "after": {
+    "solid": {
+     "max_contrast": 5.98,
+     "px_at_3to1": 1051,
+     "aa_1411": "PASS",
+     "stable": true,
+     "error": null
+    },
+    "dual": {
+     "max_contrast": 21.0,
+     "px_at_3to1": 1461,
+     "aa_1411": "PASS",
+     "stable": true,
+     "error": null
+    }
+   }
+  },
+  {
+   "framework": "Pico CSS",
+   "element": "button",
+   "css": "https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css",
+   "before": {
+    "max_contrast": 1.77,
+    "px_at_3to1": 0,
+    "aa_1411": "FAIL",
+    "visible": true
+   },
+   "after": {
+    "solid": {
+     "max_contrast": 5.98,
+     "px_at_3to1": 1084,
+     "aa_1411": "PASS",
+     "stable": true,
+     "error": null
+    },
+    "dual": {
+     "max_contrast": 21.0,
+     "px_at_3to1": 1532,
+     "aa_1411": "PASS",
+     "stable": true,
+     "error": null
+    }
+   }
+  },
+  {
+   "framework": "Bamboo",
+   "element": "link",
+   "css": "https://cdn.jsdelivr.net/npm/bamboo.css@1/dist/bamboo.min.css",
+   "before": {
+    "max_contrast": 2.0,
+    "px_at_3to1": 0,
+    "aa_1411": "FAIL",
+    "visible": true
+   },
+   "after": {
+    "solid": {
+     "max_contrast": 5.98,
+     "px_at_3to1": 960,
+     "aa_1411": "PASS",
+     "stable": true,
+     "error": null
+    },
+    "dual": {
+     "max_contrast": 21.0,
+     "px_at_3to1": 1328,
+     "aa_1411": "PASS",
+     "stable": true,
+     "error": null
+    }
+   }
+  },
+  {
+   "framework": "Bamboo",
+   "element": "text input",
+   "css": "https://cdn.jsdelivr.net/npm/bamboo.css@1/dist/bamboo.min.css",
+   "before": {
+    "max_contrast": 2.0,
+    "px_at_3to1": 0,
+    "aa_1411": "FAIL",
+    "visible": true
+   },
+   "after": {
+    "solid": {
+     "max_contrast": 5.98,
+     "px_at_3to1": 3597,
+     "aa_1411": "PASS",
+     "stable": true,
+     "error": null
+    },
+    "dual": {
+     "max_contrast": 21.0,
+     "px_at_3to1": 4888,
+     "aa_1411": "PASS",
+     "stable": true,
+     "error": null
+    }
+   }
+  },
+  {
+   "framework": "Bamboo",
+   "element": "button",
+   "css": "https://cdn.jsdelivr.net/npm/bamboo.css@1/dist/bamboo.min.css",
+   "before": {
+    "max_contrast": 2.0,
+    "px_at_3to1": 0,
+    "aa_1411": "FAIL",
+    "visible": true
+   },
+   "after": {
+    "solid": {
+     "max_contrast": 5.98,
+     "px_at_3to1": 813,
+     "aa_1411": "PASS",
+     "stable": true,
+     "error": null
+    },
+    "dual": {
+     "max_contrast": 21.0,
+     "px_at_3to1": 1176,
+     "aa_1411": "PASS",
+     "stable": true,
+     "error": null
+    }
+   }
+  },
+  {
+   "framework": "holiday.css",
+   "element": "text input",
+   "css": "https://cdn.jsdelivr.net/npm/holiday.css@0.11.2",
+   "before": {
+    "max_contrast": 1.58,
+    "px_at_3to1": 0,
+    "aa_1411": "FAIL",
+    "visible": true
+   },
+   "after": {
+    "solid": {
+     "max_contrast": 1.58,
+     "px_at_3to1": 0,
+     "aa_1411": "FAIL",
+     "stable": true,
+     "error": null
+    },
+    "dual": {
+     "max_contrast": 1.58,
+     "px_at_3to1": 0,
+     "aa_1411": "FAIL",
+     "stable": true,
+     "error": null
+    }
+   }
+  },
+  {
+   "framework": "holiday.css",
+   "element": "button",
+   "css": "https://cdn.jsdelivr.net/npm/holiday.css@0.11.2",
+   "before": {
+    "max_contrast": 1.54,
+    "px_at_3to1": 0,
+    "aa_1411": "FAIL",
+    "visible": true
+   },
+   "after": {
+    "solid": {
+     "max_contrast": 1.54,
+     "px_at_3to1": 0,
+     "aa_1411": "FAIL",
+     "stable": true,
+     "error": null
+    },
+    "dual": {
+     "max_contrast": 1.54,
+     "px_at_3to1": 0,
+     "aa_1411": "FAIL",
+     "stable": true,
+     "error": null
+    }
+   }
+  },
+  {
+   "framework": "Milligram",
+   "element": "button",
+   "css": "https://cdn.jsdelivr.net/npm/milligram@1/dist/milligram.min.css",
+   "before": {
+    "max_contrast": 1.1,
+    "px_at_3to1": 0,
+    "aa_1411": "FAIL",
+    "visible": true
+   },
+   "after": {
+    "solid": {
+     "max_contrast": 1.1,
+     "px_at_3to1": 0,
+     "aa_1411": "FAIL",
+     "stable": true,
+     "error": null
+    },
+    "dual": {
+     "max_contrast": 21.0,
+     "px_at_3to1": 764,
+     "aa_1411": "PASS",
+     "stable": true,
+     "error": null
+    }
+   }
+  },
+  {
+   "framework": "Bootstrap 5",
+   "element": "text input",
+   "css": "https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css",
+   "before": {
+    "max_contrast": 1.58,
+    "px_at_3to1": 0,
+    "aa_1411": "FAIL",
+    "visible": true
+   },
+   "after": {
+    "solid": {
+     "max_contrast": 1.58,
+     "px_at_3to1": 0,
+     "aa_1411": "FAIL",
+     "stable": true,
+     "error": null
+    },
+    "dual": {
+     "max_contrast": 1.58,
+     "px_at_3to1": 0,
+     "aa_1411": "FAIL",
+     "stable": true,
+     "error": null
+    }
+   }
+  },
+  {
+   "framework": "Bootstrap 5",
+   "element": "button",
+   "css": "https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css",
+   "before": {
+    "max_contrast": 1.84,
+    "px_at_3to1": 0,
+    "aa_1411": "FAIL",
+    "visible": true
+   },
+   "after": {
+    "solid": {
+     "max_contrast": 1.84,
+     "px_at_3to1": 0,
+     "aa_1411": "FAIL",
+     "stable": true,
+     "error": null
+    },
+    "dual": {
+     "max_contrast": 1.84,
+     "px_at_3to1": 0,
+     "aa_1411": "FAIL",
+     "stable": true,
+     "error": null
+    }
+   }
+  }
+ ]
+}
