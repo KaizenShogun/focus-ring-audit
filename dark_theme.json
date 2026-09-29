@@ -1,0 +1,385 @@
+{
+ "measured_utc": "2026-09-18T19:38:40+00:00",
+ "chromium": "/usr/bin/chromium",
+ "dark_flag": "--blink-settings=preferredColorScheme=0",
+ "rows": [
+  {
+   "framework": "Bamboo 1.4.0",
+   "css": "https://cdn.jsdelivr.net/npm/bamboo.css@1.4.0/dist/bamboo.min.css",
+   "css_sha256_16": "60d9c5b21c686739",
+   "theme": "light",
+   "element": "link",
+   "selector": "#lnk",
+   "component_px": [
+    127.28125,
+    19.0
+   ],
+   "changed_px": 600,
+   "max_contrast": 2.0,
+   "median_contrast": 2.0,
+   "px_at_3to1": 0,
+   "area_needed_approx": 601,
+   "aa_1411": "FAIL",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "Bamboo 1.4.0",
+   "css": "https://cdn.jsdelivr.net/npm/bamboo.css@1.4.0/dist/bamboo.min.css",
+   "css_sha256_16": "60d9c5b21c686739",
+   "theme": "light",
+   "element": "text input",
+   "selector": "#inp",
+   "component_px": [
+    560.578125,
+    34.0
+   ],
+   "changed_px": 2400,
+   "max_contrast": 2.0,
+   "median_contrast": 2.0,
+   "px_at_3to1": 0,
+   "area_needed_approx": 2394,
+   "aa_1411": "FAIL",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "Bamboo 1.4.0",
+   "css": "https://cdn.jsdelivr.net/npm/bamboo.css@1.4.0/dist/bamboo.min.css",
+   "css_sha256_16": "60d9c5b21c686739",
+   "theme": "light",
+   "element": "button",
+   "selector": "#btn",
+   "component_px": [
+    95.953125,
+    34.0
+   ],
+   "changed_px": 544,
+   "max_contrast": 2.0,
+   "median_contrast": 2.0,
+   "px_at_3to1": 0,
+   "area_needed_approx": 536,
+   "aa_1411": "FAIL",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "Bamboo 1.4.0",
+   "css": "https://cdn.jsdelivr.net/npm/bamboo.css@1.4.0/dist/bamboo.min.css",
+   "css_sha256_16": "60d9c5b21c686739",
+   "theme": "dark",
+   "element": "link",
+   "selector": "#lnk",
+   "component_px": [
+    127.28125,
+    19.0
+   ],
+   "changed_px": 600,
+   "max_contrast": 6.24,
+   "median_contrast": 6.24,
+   "px_at_3to1": 600,
+   "area_needed_approx": 601,
+   "aa_1411": "PASS",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "Bamboo 1.4.0",
+   "css": "https://cdn.jsdelivr.net/npm/bamboo.css@1.4.0/dist/bamboo.min.css",
+   "css_sha256_16": "60d9c5b21c686739",
+   "theme": "dark",
+   "element": "text input",
+   "selector": "#inp",
+   "component_px": [
+    560.578125,
+    34.0
+   ],
+   "changed_px": 2400,
+   "max_contrast": 6.24,
+   "median_contrast": 6.24,
+   "px_at_3to1": 2372,
+   "area_needed_approx": 2394,
+   "aa_1411": "PASS",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "Bamboo 1.4.0",
+   "css": "https://cdn.jsdelivr.net/npm/bamboo.css@1.4.0/dist/bamboo.min.css",
+   "css_sha256_16": "60d9c5b21c686739",
+   "theme": "dark",
+   "element": "button",
+   "selector": "#btn",
+   "component_px": [
+    95.953125,
+    34.0
+   ],
+   "changed_px": 544,
+   "max_contrast": 6.24,
+   "median_contrast": 6.24,
+   "px_at_3to1": 516,
+   "area_needed_approx": 536,
+   "aa_1411": "PASS",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "holiday.css 0.11.6",
+   "css": "https://cdn.jsdelivr.net/npm/holiday.css@0.11.6",
+   "css_sha256_16": "95feed8e05cce648",
+   "theme": "light",
+   "element": "link",
+   "selector": "#lnk",
+   "component_px": [
+    127.28125,
+    19.0
+   ],
+   "changed_px": 608,
+   "max_contrast": 19.03,
+   "median_contrast": 19.03,
+   "px_at_3to1": 592,
+   "area_needed_approx": 601,
+   "aa_1411": "PASS",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "holiday.css 0.11.6",
+   "css": "https://cdn.jsdelivr.net/npm/holiday.css@0.11.6",
+   "css_sha256_16": "95feed8e05cce648",
+   "theme": "light",
+   "element": "text input",
+   "selector": "#inp",
+   "component_px": [
+    648.0,
+    36.0
+   ],
+   "changed_px": 8236,
+   "max_contrast": 1.58,
+   "median_contrast": 1.11,
+   "px_at_3to1": 0,
+   "area_needed_approx": 2752,
+   "aa_1411": "FAIL",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "holiday.css 0.11.6",
+   "css": "https://cdn.jsdelivr.net/npm/holiday.css@0.11.6",
+   "css_sha256_16": "95feed8e05cce648",
+   "theme": "light",
+   "element": "button",
+   "selector": "#btn",
+   "component_px": [
+    89.953125,
+    36.390625
+   ],
+   "changed_px": 1552,
+   "max_contrast": 1.54,
+   "median_contrast": 1.06,
+   "px_at_3to1": 0,
+   "area_needed_approx": 521,
+   "aa_1411": "FAIL",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "holiday.css 0.11.6",
+   "css": "https://cdn.jsdelivr.net/npm/holiday.css@0.11.6",
+   "css_sha256_16": "95feed8e05cce648",
+   "theme": "dark",
+   "element": "link",
+   "selector": "#lnk",
+   "component_px": [
+    127.28125,
+    19.0
+   ],
+   "changed_px": 920,
+   "max_contrast": 13.88,
+   "median_contrast": 13.88,
+   "px_at_3to1": 592,
+   "area_needed_approx": 601,
+   "aa_1411": "PASS",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "holiday.css 0.11.6",
+   "css": "https://cdn.jsdelivr.net/npm/holiday.css@0.11.6",
+   "css_sha256_16": "95feed8e05cce648",
+   "theme": "dark",
+   "element": "text input",
+   "selector": "#inp",
+   "component_px": [
+    648.0,
+    36.0
+   ],
+   "changed_px": 8254,
+   "max_contrast": 4.61,
+   "median_contrast": 1.41,
+   "px_at_3to1": 2720,
+   "area_needed_approx": 2752,
+   "aa_1411": "PASS",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "holiday.css 0.11.6",
+   "css": "https://cdn.jsdelivr.net/npm/holiday.css@0.11.6",
+   "css_sha256_16": "95feed8e05cce648",
+   "theme": "dark",
+   "element": "button",
+   "selector": "#btn",
+   "component_px": [
+    89.953125,
+    36.390625
+   ],
+   "changed_px": 1570,
+   "max_contrast": 4.28,
+   "median_contrast": 1.41,
+   "px_at_3to1": 492,
+   "area_needed_approx": 521,
+   "aa_1411": "PASS",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "CONTROL Tacit",
+   "css": "https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css",
+   "css_sha256_16": "e1a799d5245a113d",
+   "theme": "light",
+   "element": "link",
+   "selector": "#lnk",
+   "component_px": [
+    143.203125,
+    21.0
+   ],
+   "changed_px": 680,
+   "max_contrast": 19.03,
+   "median_contrast": 19.03,
+   "px_at_3to1": 664,
+   "area_needed_approx": 673,
+   "aa_1411": "PASS",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "CONTROL Tacit",
+   "css": "https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css",
+   "css_sha256_16": "e1a799d5245a113d",
+   "theme": "light",
+   "element": "text input",
+   "selector": "#inp",
+   "component_px": [
+    239.59375,
+    42.484375
+   ],
+   "changed_px": 1128,
+   "max_contrast": 19.03,
+   "median_contrast": 2.72,
+   "px_at_3to1": 558,
+   "area_needed_approx": 1144,
+   "aa_1411": "PASS",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "CONTROL Tacit",
+   "css": "https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css",
+   "css_sha256_16": "e1a799d5245a113d",
+   "theme": "light",
+   "element": "button",
+   "selector": "#btn",
+   "component_px": [
+    127.734375,
+    42.734375
+   ],
+   "changed_px": 682,
+   "max_contrast": 19.03,
+   "median_contrast": 17.0,
+   "px_at_3to1": 672,
+   "area_needed_approx": 698,
+   "aa_1411": "PASS",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "CONTROL Tacit",
+   "css": "https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css",
+   "css_sha256_16": "e1a799d5245a113d",
+   "theme": "dark",
+   "element": "link",
+   "selector": "#lnk",
+   "component_px": [
+    143.203125,
+    21.0
+   ],
+   "changed_px": 680,
+   "max_contrast": 19.03,
+   "median_contrast": 19.03,
+   "px_at_3to1": 664,
+   "area_needed_approx": 673,
+   "aa_1411": "PASS",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "CONTROL Tacit",
+   "css": "https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css",
+   "css_sha256_16": "e1a799d5245a113d",
+   "theme": "dark",
+   "element": "text input",
+   "selector": "#inp",
+   "component_px": [
+    239.59375,
+    42.484375
+   ],
+   "changed_px": 1128,
+   "max_contrast": 19.03,
+   "median_contrast": 2.72,
+   "px_at_3to1": 558,
+   "area_needed_approx": 1144,
+   "aa_1411": "PASS",
+   "visible": true,
+   "stable": true,
+   "error": null
+  },
+  {
+   "framework": "CONTROL Tacit",
+   "css": "https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css",
+   "css_sha256_16": "e1a799d5245a113d",
+   "theme": "dark",
+   "element": "button",
+   "selector": "#btn",
+   "component_px": [
+    127.734375,
+    42.734375
+   ],
+   "changed_px": 682,
+   "max_contrast": 19.03,
+   "median_contrast": 17.0,
+   "px_at_3to1": 672,
+   "area_needed_approx": 698,
+   "aa_1411": "PASS",
+   "visible": true,
+   "stable": true,
+   "error": null
+  }
+ ]
+}

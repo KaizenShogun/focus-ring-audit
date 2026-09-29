@@ -20,7 +20,9 @@ This repo is two things:
 a button with a focus indicator below 3:1** — Pico CSS (on buttons), water.css, holiday.css,
 and Bamboo, which fails on all three. The other 11 pass, most of them for the same reason:
 they leave the ring the browser already drew alone. Two class-based frameworks were measured
-as reference points, and both fail: Bootstrap 5 and Milligram.
+as reference points, and both fail: Bootstrap 5 and Milligram. That headline is the light
+theme; Bamboo and holiday.css ship a dark block and both pass in it, which is measured below
+and is part of the diagnosis, not a footnote.
 
 If you use one of the four, the fix is at the bottom and it was measured, not guessed.
 
@@ -39,7 +41,7 @@ different ways, and all three are invisible to anyone grepping for `outline`:
 |---|---|---|
 | **an alpha channel on the ring colour** | `box-shadow: 0 0 0 2px rgba(2,154,232,.5)` | composited over the page: `rgb(128,204,244)` — **1.77:1** |
 | **a pale opaque colour** | `box-shadow: 0 0 0 2px #88c0d0` | exactly what it says — **2.00:1** |
-| **a blur radius instead of a hard ring** | `box-shadow: 0 0 .2rem .01rem <colour>` | a glow whose peak never gets near the declared colour — **1.58:1** |
+| **a pale colour *and* a blur radius** | `box-shadow: 0 0 .2rem .01rem <colour>` | a glow whose peak stops short of a colour that was already too pale — **1.58:1** |
 
 Nothing in any of those lines says "invisible". The pixels do.
 
@@ -127,6 +129,42 @@ is exactly what the *area* leg of SC 2.4.13 exists to catch. `results.json` carr
 `changed_px` and `area_ratio` for every row; the table cannot show you that in one number, so
 read the JSON before quoting a pass as an endorsement.
 
+### The table above is the light theme. Two of the four pass in the dark one
+
+Bamboo and holiday.css both ship a `prefers-color-scheme: dark` block, so the verdict can depend
+on which theme the visitor gets. Measured with `--blink-settings=preferredColorScheme=0`, with a
+sheet that has no dark block at all (Tacit) as the paired control — it returns the same numbers
+with the flag and without it, which is what makes the dark column publishable:
+
+| | link | text input | button |
+|---|--:|--:|--:|
+| Bamboo, light | **2.00:1** | **2.00:1** | **2.00:1** |
+| Bamboo, dark | 6.24:1 | 6.24:1 | 6.24:1 |
+| holiday.css, light | 19.03:1 | **1.58:1** | **1.54:1** |
+| holiday.css, dark | 13.88:1 | 4.61:1 | 4.28:1 |
+
+Same stylesheet, same ring, opposite verdict. In Bamboo the cause is visible in the source: the
+dark block re-declares `--b-txt`, `--b-bg-1`, `--b-bg-2` and `--b-line`, and `--b-focus` is not
+among them, so a light Nord blue meant for a dark page is also what you get on a white one.
+
+### What happened upstream (checked 2026-09-29)
+
+Each failure was reported to its project, with the numbers and a measured fix. The table
+above is still what you get from the published packages today; this is where each one stands.
+
+| framework | report | state |
+|---|---|---|
+| holiday.css | [#347](https://github.com/EvgenyOrekhov/holiday.css/issues/347) → [#348](https://github.com/EvgenyOrekhov/holiday.css/pull/348) | **fixed in `main`** (merged 2026-09-28, `1051805c`), **not yet released**: npm is still at 0.11.6. The ring gets its own variable (`#767676` light, `#bcbebd` dark) and a solid outline instead of the blur. Measured on the merge commit built with the project's own `npm run build`: **4.54:1** on input and button in light (was 1.58 / 1.54), **8.62:1** in dark (was 4.61 / 4.28). The parent commit, measured in the same batch, reproduced the old numbers to the hundredth |
+| Pico CSS | [#751](https://github.com/picocss/pico/issues/751) | open. Its maintainer-successor says Pico has gone unmaintained for over a year; the fork that is maintained, Blades CSS, took the report over as [anyblades/blades#167](https://github.com/anyblades/blades/issues/167) (open) |
+| water.css | [#394](https://github.com/kognise/water.css/issues/394) | open, no reply; the repo had no push between Feb 2024 and mid-Sep 2026 |
+| Bamboo | [#7](https://github.com/rilwis/bamboo/issues/7) | open, no reply |
+| Milligram *(reference)* | [#449](https://github.com/milligram/milligram/issues/449) | open |
+
+One thing the Blades report made clear: focus colours built as a translucent tint of the
+primary have a hard ceiling. At 25% alpha **no base colour can pass on white**. Pure
+black at `.25` composites to `rgb(191,191,191)`, which is 1.84:1, so that ring cannot be fixed
+by picking a better colour; the alpha has to go (`python3 alpha_check.py "rgba(0,0,0,0.25)" "#ffffff"`).
+
 The where-it-comes-from, for the four that fail:
 
 | framework | the line | why it fails |
@@ -134,7 +172,7 @@ The where-it-comes-from, for the four that fail:
 | Pico CSS | `--pico-primary-focus: rgba(2, 154, 232, .5)` on `button:focus`'s `box-shadow` | 50% alpha; composites to `rgb(128, 204, 244)` on white |
 | water.css | `button:focus{box-shadow: 0 0 0 2px #0096bfab}` | `ab` is 67% alpha |
 | Bamboo | `:focus{outline:none; box-shadow: 0 0 0 2px var(--b-focus)}`, `--b-focus: #88c0d0` | no alpha at all — the colour is simply too pale |
-| holiday.css | `button:focus{outline:0; box-shadow: 0 0 .2rem .01rem var(--border-hover-color)}` | `.2rem` of *blur*: the glow never reaches the declared colour |
+| holiday.css | `button:focus{outline:0; box-shadow: 0 0 .2rem .01rem var(--border-hover-color)}` | the declared colour is `#b5b5b5`, which is 2.05:1 on white even as a hard ring; the `.2rem` of blur takes the peak down to 1.54 |
 
 `python3 focus_rules.py <stylesheet-url>` prints that for any sheet, and `python3
 alpha_check.py "rgba(2,154,232,0.5)" "#ffffff"` does the compositing arithmetic on its own, as
@@ -202,8 +240,8 @@ the ring against the page:
 |---|---|---|
 | Pico CSS | `--pico-primary-focus: rgba(2, 154, 232, .5)` | dropping the alpha (`#029ae8`) gets 1.77 → **3.09:1**, which clears the bar by 0.09. `#0172ad` — the opaque colour Pico's own text input ring already uses — gets **5.23:1** |
 | water.css | `--focus: #0096bfab` | `#0096bf` — the same colour, without the `ab` |
-| Bamboo | `--b-focus: #88c0d0` | a darker blue; the colour has no alpha, it is simply too pale |
-| holiday.css | `box-shadow: 0 0 .2rem .01rem <colour>` | a hard ring: the `.2rem` of blur is what keeps the glow away from the declared colour |
+| Bamboo | `--b-focus: #88c0d0` | `#5e81ac` (Nord 10) in the light theme, keeping `#88c0d0` in the dark block: **4.03:1 / 6.24:1**. The same colour in both themes also passes, but only 3.10:1 in dark |
+| holiday.css | `box-shadow: 0 0 .2rem .01rem <colour>` | **not** a hard ring on its own: same colour without blur is still 2.05:1. `--light-border-hover-color: #767676` **plus** a hard ring gets **4.54:1** on input and button. `#595959` alone, blur intact, gets 5.06 / 3.23 |
 
 Every one of those is a variable, which is the good news: you can test the change without
 touching a selector, and `try_fix.py` measures it before you ship it.
@@ -276,7 +314,14 @@ python3 run_corpus.py --tries 2      # the corpus            -> results.json
 python3 make_table.py results.json   # the markdown above
 python3 fix_candidates.py --tries 2  # the fix table         -> fixes.json
 python3 _pico_dark.py                # Pico's dark theme     -> pico_dark.json
+python3 dark_theme.py --tries 2      # both themes + control -> dark_theme.json
+python3 maintainer_fixes.py          # Bamboo/holiday fixes  -> maintainer_fixes.json
+python3 colour_pairs.py              # which two colours     -> colour_pairs.json
 ```
+
+`colour_pairs.py` is the one to reach for if you don't believe a number: it prints the exact
+`#rrggbb → #rrggbb` transition behind it and how many pixels take it, so the WCAG arithmetic
+can be redone by hand without running anything else.
 
 Every measurement is repeated and any row whose two runs disagree is reported as `UNSTABLE`
 rather than averaged. `results.json` records the sha256 of every stylesheet as fetched, so a

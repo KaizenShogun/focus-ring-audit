@@ -1,0 +1,174 @@
+{
+ "Bamboo #btn": {
+  "changed_px": 544,
+  "max_contrast": 2.0,
+  "px_at_3to1": 0,
+  "pares": [
+   {
+    "n": 484,
+    "antes": "#ffffff",
+    "despues": "#88c0d0",
+    "contraste": 2.0
+   },
+   {
+    "n": 5,
+    "antes": "#ffffff",
+    "despues": "#a9d1dd",
+    "contraste": 1.63
+   },
+   {
+    "n": 4,
+    "antes": "#ffffff",
+    "despues": "#d3e8ee",
+    "contraste": 1.27
+   },
+   {
+    "n": 4,
+    "antes": "#ffffff",
+    "despues": "#aed4df",
+    "contraste": 1.58
+   },
+   {
+    "n": 4,
+    "antes": "#ffffff",
+    "despues": "#94c6d4",
+    "contraste": 1.86
+   },
+   {
+    "n": 4,
+    "antes": "#bdbfc2",
+    "despues": "#6993a1",
+    "contraste": 1.81
+   }
+  ]
+ },
+ "Bamboo #inp": {
+  "changed_px": 2400,
+  "max_contrast": 2.0,
+  "px_at_3to1": 0,
+  "pares": [
+   {
+    "n": 2340,
+    "antes": "#ffffff",
+    "despues": "#88c0d0",
+    "contraste": 2.0
+   },
+   {
+    "n": 5,
+    "antes": "#ffffff",
+    "despues": "#a9d1dd",
+    "contraste": 1.63
+   },
+   {
+    "n": 4,
+    "antes": "#ffffff",
+    "despues": "#d3e8ee",
+    "contraste": 1.27
+   },
+   {
+    "n": 4,
+    "antes": "#ffffff",
+    "despues": "#aed4df",
+    "contraste": 1.58
+   },
+   {
+    "n": 4,
+    "antes": "#ffffff",
+    "despues": "#94c6d4",
+    "contraste": 1.86
+   },
+   {
+    "n": 4,
+    "antes": "#f9fafc",
+    "despues": "#a5cedb",
+    "contraste": 1.61
+   }
+  ]
+ },
+ "holiday.css #btn": {
+  "changed_px": 1552,
+  "max_contrast": 1.54,
+  "px_at_3to1": 0,
+  "pares": [
+   {
+    "n": 250,
+    "antes": "#ffffff",
+    "despues": "#fefefe",
+    "contraste": 1.01
+   },
+   {
+    "n": 224,
+    "antes": "#ffffff",
+    "despues": "#fbfbfb",
+    "contraste": 1.03
+   },
+   {
+    "n": 222,
+    "antes": "#ffffff",
+    "despues": "#f3f3f3",
+    "contraste": 1.11
+   },
+   {
+    "n": 222,
+    "antes": "#48c774",
+    "despues": "#b5b5b5",
+    "contraste": 1.06
+   },
+   {
+    "n": 214,
+    "antes": "#ffffff",
+    "despues": "#e4e4e4",
+    "contraste": 1.27
+   },
+   {
+    "n": 214,
+    "antes": "#ffffff",
+    "despues": "#d0d0d0",
+    "contraste": 1.54
+   }
+  ]
+ },
+ "holiday.css #inp": {
+  "changed_px": 8236,
+  "max_contrast": 1.58,
+  "px_at_3to1": 0,
+  "pares": [
+   {
+    "n": 1364,
+    "antes": "#ffffff",
+    "despues": "#fefefe",
+    "contraste": 1.01
+   },
+   {
+    "n": 1338,
+    "antes": "#ffffff",
+    "despues": "#fbfbfb",
+    "contraste": 1.03
+   },
+   {
+    "n": 1336,
+    "antes": "#ffffff",
+    "despues": "#f3f3f3",
+    "contraste": 1.11
+   },
+   {
+    "n": 1336,
+    "antes": "#dbdbdb",
+    "despues": "#b5b5b5",
+    "contraste": 1.48
+   },
+   {
+    "n": 1328,
+    "antes": "#ffffff",
+    "despues": "#e4e4e4",
+    "contraste": 1.27
+   },
+   {
+    "n": 1328,
+    "antes": "#ffffff",
+    "despues": "#d0d0d0",
+    "contraste": 1.54
+   }
+  ]
+ }
+}
